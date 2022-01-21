@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <title> Staff Login  </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/Management_Login_Page.css" type="text/css">
+        <script type="text/javascript" src="../script/staffloginscript.js"></script>
+        
+    </head>
+    <body>
+        
+        <!-- Create a table to center the login part of the page -->
+        <table align="center" id="container" cellspacing="10" >
+            <!-- Create the single row of which the center column is the main login layout -->
+            <tr>
+                <!-- The left most column -->
+                <td></td>
+                <!-- The center column to house the main login page to be empty -->
+                <td>
+                    <!-- Create the table for the main login layout -->
+                    <table>
+                        <!-- Create the header for the layout-->
+                        <tr align="center">
+                            <th id="teacher"> Teacher Sign In </th>
+                        </tr>
+                        <!-- The row to hold the management icon -->
+                        <tr align="center">
+                            <td style="padding-top: 10mm"> <img src="../../images/icons/teacher.png" alt="management" width="80" height="80" /> </td>
+                        </tr>
+                        <!-- The row to hold the instruction to the page -->
+                        <tr align="center">
+                            <td id="instruction"> Enter Username and Password in the fields provided below to sign in.</td>
+                        </tr>
+                        
+                        <!-- The row to hold the username field -->
+                        
+                        <tr align="center">
+                            <td>
+                                <table  style="margin-top: 20pt" cellpadding="6">
+                                    <tr>
+                                        <td>
+                                            <input type="text" size="50" id="loginUsername" placeholder="Username" />
+                                        </td>
+                                    </tr>
+                                    <!-- The row to hold the password -->
+                                    <tr align="center">
+                                        <td>
+                                            <input type="password" size ="50" id="passwordField" placeholder="Password" />
+                                        </td>
+                                    </tr>
+                                    <!-- The row for the button --> 
+                                    <tr>
+                                        <td align="center">
+                                            <div>
+                                                <div>
+                                                    <span id="messageLine"><!--Message here -->  </span>
+                                                </div>
+                                                <br />
+                                                <div>
+                                                    <input  type="button" value="Login" id="loginButton" onclick="userLogin()" />
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                           
+                    </table>
+                </td>
+                <!-- The right most column to be empty -->
+                <td></td>
+            </tr>
+
+            <!-- footer row -->
+            <tr>
+               <td colspan="3" style="position: absolute;width: 100%; height: 5%; background-color: rgb(10,20,45); bottom: 0; left: 0; right: 0; color: white"> 
+                
+                <span style="font-size: 10pt;"> &copy; 2021. All rights reserved | Springarr </span>
+
+              </td> 
+            </tr>
+        </table>
+
+        <!-- The script file -->
+        <script type="text/javascript" src="../script/staffloginscript.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Management Registration Page </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="../style/managementregistrationstyle.css" />
+
+        <script type="text/javascript" src="../script/managementregistrationscript.js" ></script>
+    </head>
+
+    <body>
+        <br />
+        <div id="header" align="center"> SCHOOL MANAGEMENT REGISTRATION PAGE </div> <br />
+        <p id="para1" style="font-size: 13pt; margin-left: 10mm;"> Fill in the following form correctly to register the school  and database records. A feedback will be given if 
+        the registration is successful.
+        </p>
+        
+        <div class="notice" id="notice" align="left" style="font-size: 13pt; margin-left: 10mm;"> 
+            <span style="color: blue"> <div> NOTE: </div> </span>
+            <span>
+                <div>
+                    This application allows for the registration of unlimited number of schools. However, it is advisable that only one school use this application on a single machine or systems of machines connected in a Local Area Network (LAN). It should also be noted that:
+                    <ul>
+                        <li> This product have an <strong> embedded relational database system </strong> that automatically get associated with the school data on installation of the product. 
+                        </li>
+                        <li> Other database management systems, specifically, <strong> Mysql </strong> and <strong> Microsoft Access </strong> can be added to enhance additional performance.
+
+                        </li>
+                    </ul>
+                </div>
+            </span>
+        </div> 
+        <br />
+        <!-- A table with three columns -->
+        
+        <p id="schoolregistration" align="center" class="header"> SCHOOL REGISTRATION </p>    
+        <form id="registrationForm" name="registrationForm">
+            <table align="center" style="font-size: 13pt; width: 70%">
+                <tr>
+                    <td></td>
+                    <td>
+            <fieldset style="border-color: blue">
+                <legend class="legend"> School Details </legend>
+                <table cellspacing="15" cellpadding="5">
+                  <!-- First row -->  
+                    <tr>
+                        <td>Name:</td>
+                        <td> <input type="text" id="s1" size="60" placeholder="Enter name of school" class="box" /> </td>
+                    </tr>
+                  
+                    <!-- Second row -->
+                    <tr>
+                        <td> Address: </td>
+                        <td> <input type="text" id="s2" size="60" placeholder="Enter Address of school" class="box"/> </td>
+                    </tr>
+                    
+                    <!-- Nationality of school -->
+                    <tr>
+                        <td> Nationality: </td>
+                        <td> <input type="text" id="s3" name="nationalityField" class="box" /> </td>
+                    </tr>
+                    
+                    <!-- third row -->
+                    <tr>
+                        <td> Number of staff (Staff capacity): </td>
+                        <td> <input type="text" id="s4"  class="box"/> </td>
+                    </tr>
+                    
+                    <!-- Fourth row -->
+                    <tr>
+                        <td> School Capacity: </td>
+                        <td>
+                            <select class="selectBox" id="s5" name="capacityBox">
+                                <option name="empty" id="empty"> Select an option </option>
+                                <option name="nursery" id="nursery"> Nursery School Only </option>
+                                <option name="primary" id="primary"> Primary School only</option>
+                                <option name="secondary" id="secondary"> Secondary School Only </option>
+                                <option name="nAndP" id="nAndP"> Nursery And Primary School Only </option>
+                                <option name="pAndS" id="pAndS"> Primary And secondary school Only </option>
+                                <option name="nAndS" id="nAndS"> Nursery And secondary school Only </option>
+                                <option name="all" id="all"> Nursery, Primary And secondary </option>
+                            </select>
+                        </td>
+                        
+                        <!-- fifth row -->
+                    <tr>
+                        <td> Number of Classes:</td>
+                        <td> <input type="text" name="classnumber" id="s6" class="box" /> </td>
+                    </tr>
+                    
+                    <!-- sixth row -->
+                    <tr>
+                        <td> Type of School:</td>
+                        <td>
+                            <select name="type" id="s7" class="selectBox">
+                                <option name="emptytype" id="emptytype"> Select an option </option>
+                                <option name="boys" id="boys"> Boys Only </option>
+                                <option name="girls" id="girls"> Girls Only </option>
+                                <option name="mixed" id="mixed"> Mixed </option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <!-- seventh row -->
+                    <tr>
+                        <td> Email Address: </td>
+                        <td> <input type="text" name="emailField" id="s8" size="60" class="box"/> </td>
+                    </tr>
+                    
+                    <!-- Eight row --> 
+                    <tr>
+                        <td> Alternate Email: </td>
+                        <td> <input type="text" id="s9" name="branchesField" size="60"  class="box"/>
+                    </tr>
+                    
+                    <!-- Alternate contact -->
+                    <tr>
+                        <td> Mobile Address: </td>
+                        <td> <input type="text" id="s10" name="mobileField" class="box"/>  </td>
+                    </tr>
+                    
+                    <!-- Alternate mobile field -->
+                    <tr>
+                        <td> Alternate Mobile: </td>
+                        <td> <input type="text" id="s11" name="altMobileField" class="box" /> </td>
+                    </tr>
+                    
+                    <!-- Number of branches -->
+                    <tr>
+                        <td> Number of Branches: </td>
+                        <td> <input type="text" id="s12" name="branchesField" class="box" /> </td>
+                    </tr>
+                </table>
+                    
+            </fieldset>
+            <br />
+            
+            <!-- second table for management registration -->
+            <p id="managemenForm" align="center" class="header"> MANAGEMENT REGISTRATION FORM </p>
+            <fieldset style="border-color: blue;">
+                <legend class="legend"> Personal Details </legend>
+                <table cellpadding="5" cellspacing="10">
+                    <!-- Name -->
+                    <tr>
+                        <td colspan="3"> Name </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" name="lastName" id="mp1" placeholder="Last Name" class="box" /> </td>
+                        <td> <input type="text" name="firstName" id="mp2" placeholder="First Name" class="box"/> </td>
+                        <td> <input type="text" name="middleName" id="mp3" placeholder="Middle Name" class="box" /> </td>
+                    </tr>
+                    
+                    <!-- Contact--> 
+                    <tr>
+                        <td> Nationality </td>
+                        <td colspan="2" > Status </td>
+                    </tr>
+                    <tr> 
+                        <td>   <input type="text" id="mp4" name="manNationalityField" class="box"/> </td>
+                        <td colspan="2">
+                            <select class="selectBox" id="mp5" >
+                                <option> Select Option </option>
+                                <option> Single Undergraduate </option>
+                                <option> Single Graduate </option>
+                                <option> Married Undergraduate</option>
+                                <option> Married Graduate </option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br />
+            <!-- Management Contact details -->
+            <fieldset style="border-color: blue;">
+                <legend class="legend"> Contact Details </legend>
+                <table cellspacing="10" cellpadding="5">
+                    <tr>
+                        <td> Street Address</td>
+                        <td> Province/State</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" id="mc1" name="streetAddressField" size="50" class="box" /> </td>
+                        <td> <input type="text" id="mc2" name="provinceField1" class="box"/> </td>
+                    </tr>
+                    
+                     <tr>
+                        <td> Office Address</td>
+                        <td> Province/State</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" id="mc3" name="streetAddressField" size="50" class="box" /> </td>
+                        <td> <input type="text" id="mc4" name="provinceField2" class="box"/> </td>
+                    </tr>
+                    
+                     <tr>
+                        <td> E-mail Address</td>
+                        <td> Mobile No </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" id="mc5" name="manEmailField" size="50" class="box"/> </td>
+                        <td> <input type="text" id="mc6" name="manMobileField" class="box"/> </td>
+                    </tr>
+                    
+                     <tr>
+                        <td> Alternate Email</td>
+                        <td> Alternate Mobile</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" id="mc7" name="manAltEmailField" size="50" class="box" /> </td>
+                        <td> <input type="text" id="mc8" name="manAltMobileField" class="box"/> </td>
+                    </tr>
+                           
+                </table>
+                
+            </fieldset>
+            <br />
+                <!-- Login Details -->
+        <fieldset style="border-color: blue;">
+            <legend class="legend"> Login Details </legend>
+                <table cellspacing="10" cellpadding="5">
+                    <tr>
+                        <td> Username </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" size="70" id="ml1" name="manUsernameField" placeholder="Enter preffered username or email" class="box"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Password </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" size="70" id="ml2" name="manPasswordField" placeholder="Enter preffered password" class="box"/> </td>
+                    </tr>
+                    
+                         <tr>
+                        <td> Confirm Password </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="text" size="70" id="ml3" name="manConPasswordField" placeholder="Confirm password" class="box"/> </td>
+                    </tr>
+                    
+                </table>
+        </fieldset>
+        <br />
+        
+        <p id="principalLabel" align="center" class="header"> DATABASE REGISTRATION </p>
+        <fieldset style="border-color: blue;">
+            <legend class="legend"> Database Metadata </legend>
+            <table cellspacing="10" cellpadding="5" id="databasetable">
+                <tr>
+                    <td> Academic Session </td>
+                    <td>
+                        <select class="selectBox">
+                            <option> Select option </option>
+                            <option> 2018/2019 </option>
+                            <option> 2019/2020 </option>
+                            <option> 2020/2021 </option>
+                            <option> 2021/2022 </option>
+                            <option> 2022/2023 </option>
+                            <option> Custom </option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td> Academic Term </td>
+                    <td>
+                        <select class="selectBox">
+                            <option> First Term </option>
+                            <option> Second Term </option>
+                            <option> Third Term </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <br />
+                        <p style="color: darkcyan"> Additional Database (Optional) </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <span>
+                            Do you wish to have the school database records in a separate <strong> Mysql </strong> server?
+                        </span>
+                        <span style="margin-left: 4mm;">
+                            <input type="button" id="mysqlYes" style="color: blue;background-color: transparent;border-width: 0;"  value="Yes" /> 
+                            <input type="button" id="mysqlNo" style="color: red;background-color: transparent;border-width: 0;"  value="No" />
+                        </span>
+                    </td>
+                </tr>
+                
+               <!-- row for the response -->
+               <tr>
+                   <td colspan="2">
+                       <table id="responseTable" style="display: none;">
+                            <tr>
+                                <td colspan="2" id="mysqlinstruction">
+                                    Provide the following connection details:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Connection Username:
+                                </td>
+                                <td>
+                                    <input type="text" id="mysqlusername" size="50" placeholder="Enter the username set in the Mysql database server" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Connection Password: 
+                                </td>
+                                <td>
+                                    <input type="password" id="mysqlpassword" size="50" placeholder="Enter the password set in the Mysql server" />
+                                </td>
+                            </tr>        
+                       </table>
+                   </td>
+               </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <span>
+                            Do you have <strong> Microsoft Access </strong> database system installed?
+                        </span>
+                        <span style="margin-left: 4mm;">
+                            <input type="button" id="msaccessYes" style="color: blue;background-color: transparent;border-width: 0;"  value="Yes" /> 
+                            <input type="button" id="msaccessNo" style="color: red;background-color: transparent;border-width: 0;"  value="No" />
+                        </span>
+                    </td>        
+                </tr>
+
+                <tr>
+                    <td colspan="2" id="accessresponse" style="display: none;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" id="msaccessversion" size="50" placeholder="Enter the version of the MS Access installed on your computer" style="border-color: black;" >
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+        <br />
+        
+    <p align="center" class="header"> DESIGN (Optional) </p>    
+    <fieldset style="border-color: blue;">
+        <legend class="legend"> Design </legend>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <p> 
+                        Do you wish to change the background of this application?
+                        <input type="button" value="Yes" id="yesButton" name="yesButton" />
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" id="design">
+                    <!-- design table options here -->
+                    <table id="designTable" style="display: none;">
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" id="adddesignbutton" value="Add design" style="background-color: green; border-width: 0mm; border-radius: 3mm; height: 6mm; color: white; font-size: 10pt; font-family: constantia">
+                            </td>
+                        </tr>
+
+                    </table>               
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+        <br />    
+    <!-- Submit button -->
+    <p> 
+        <span>
+            <p> By clicking on the submit button below, you agree with our terms and conditions.</p>
+            <p> Also, ensure that all required fields are entered with the correct information before clicking the submit button
+            </p>
+            <p> Clicking the submit button, registers all the data entered in the available database management system(s).
+            </p>
+        </span>
+        <br />
+        <span>
+        <input type="button" id="submitbutton" name="submitbutton" value="Submit" style="height: 30pt; width: 90pt; font-size: 12pt; font-weight: bold; font-family: constantia;" />
+        </span>
+
+        <span id="submitstatusspan"></span> 
+    </p>
+            
+            </td>
+            <td></td>
+           </tr>
+         </table>
+     </form>
+
+     <script type="text/javascript" src="../script/managementregistrationscript.js"></script>
+
+    </body>
+</html>

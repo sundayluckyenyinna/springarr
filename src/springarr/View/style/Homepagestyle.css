@@ -1,0 +1,379 @@
+        
+        body
+        {
+            background-color: transparent;
+        }
+        .header
+		{
+			background-color: rgb(10,20,45);
+                        background-attachment: fixed;
+			position: absolute;
+			height: 10%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			right: 0;
+		}   
+
+		.content
+		{
+			background-image: url('../../images/backgrounds/w30.jpg');
+			background-size: 100% 100%;
+			background-attachment: fixed; 
+			position: absolute;
+			height: 85%;
+			width: 100%;
+			left: 0;
+			top: 10%;
+			right: 0;
+		} 	
+
+		.footer
+		{
+			background-color: black;
+			position: fixed;
+			height: 5%;
+			width: 100%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		.companyblock
+    	{
+    		background-color: transparent;
+    		position: absolute;
+    		height: 100%;
+    		width: 30%;
+    		min-width: 30%;
+    		max-width: 30%;
+    		left: 3mm;
+    	}
+
+    	#companyname
+    	{
+    		position: absolute;
+    		height: 100%;
+    		width: 100%;
+    		min-width: 100%;
+    		font-size: 28pt;
+    		font-family: Bookman Old Style;
+    		font-weight: bold;
+    		font-stretch: 2pt;
+    		color: wheat;
+    		padding-top: 2.5mm;
+    	}
+
+    	.navigationbar
+    	{
+    		height: 100%;
+    		min-height: 100%;
+    		max-height: 100%;
+    		width: 30.5%;
+    		max-width: 30.5%;
+    		min-width: 30%;
+    		left: 30%;
+    		background-color: transparent;
+    		position: absolute;
+    	}
+
+    	#aboutbutton, #contactbutton, #registerbutton, #signinbutton
+    	{
+    		/* The layout parameters */
+    		height: 100%;
+    		min-height: 100%;
+    		max-height: 100%;
+    		width: 76pt;
+    		
+    		/* The backgroud color parameter */
+    		background-color: transparent;
+    		
+    		/* The border parameters */
+    		border-color: transparent;
+    		border-radius: 0pt;
+    		border-width: 0pt;
+
+    		/* The font properties */
+    		font-size: 12pt;
+    		font-family: constantia;
+    		font-stretch: ultra-expanded;
+    		text-align: center;
+    		font-weight: bold;
+    		color: white;
+
+    		/* The cursor styling */
+    		cursor: pointer;
+
+    	}
+
+    	#aboutbutton:hover, #contactbutton:hover, #registerbutton:hover, #signinbutton:hover
+    	{
+    		background-color: blue;
+    		cursor: pointer;
+
+    	}
+
+    	#abouticon, #contacticon, #registericon
+    	{
+
+    	}
+
+    	.sign
+    	{
+    		height: 100%; 
+    		border-width: 0pt; 
+    		border-color: transparent; 
+    		background-color: transparent; 
+    		border-collapse: collapse; 
+    	}
+
+    	.menu
+    	{
+    		height: 100%;
+    		background-color: transparent;
+    		display: inline-block;
+    		position: relative;
+    	}
+
+    	.menuitems
+    	{
+    		position: absolute;
+    		background-color: lightblue;
+    		min-width: 250px;
+    		display: none;
+    		z-index: 1;
+    	}
+    	
+    	.menuitems a
+    	{
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    		font-size: 10pt;
+    		font-weight: bold;
+    	}
+
+    	.menuitems a:hover
+    	{
+    		background-color: blue;
+    		color: white;
+    	}
+
+    	.menu:hover .menuitems
+    	{
+    		display: block;
+    	}
+
+    	.menu:hover .signinbutton
+    	{
+    		background-color: rgb(10,20,45);
+    	}
+
+    	
+    	.searchgroup
+    	{
+    		position: absolute;
+    		height: 100%;
+    		width: 39.5%;
+    		background-color: transparent;
+    		right: 0;
+    	}
+
+    	.searchwrap
+    	{
+    		position: absolute;
+    		right: 3mm;
+    		margin-top: 5mm;
+    	}
+
+    	#searchfield
+    	{
+    		height: 18pt;
+    		width: 300pt;
+    		border-top-left-radius: 2mm;
+    		border-bottom-left-radius: 2mm;
+    		border-width: 0mm;
+    		border-color: transparent;
+    		border-collapse: collapse;
+    		font-size: 10pt;
+    		font-family: constantia;
+    		text-indent: 5mm;
+    	}
+
+    	#searchbutton
+    	{
+    		height: 19.5pt;
+    		background-color: lightblue;
+    		color: green;
+    		font-family: Times New Roman;
+    		font-size: 10pt;
+    		border-width: 0pt;
+    		border-color: transparent;;
+    		border-collapse: collapse;
+    		border-top-right-radius: 2mm;
+    		border-bottom-right-radius: 2mm;
+    		cursor: pointer;
+    		
+    	}
+
+    	#searchbutton:hover
+    	{
+    		background-color: blue;
+    		color: white;
+    	}
+
+        .copywritemessage
+        {
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: white;
+            padding-left: 3mm;
+            padding-top: 1mm;
+            position: absolute;
+        }
+
+        .generaltable
+        {
+            border-collapse: collapse;
+
+        }
+
+        #managementbutton
+        {
+            height: 20pt;
+            width: 100pt;
+            background-color: lightblue;
+            color: black;
+            font-size: 12pt;
+            font-family: Times New Roman;   
+            border-color: transparent;
+            border-width: 0mm;
+            border-radius: 5mm;
+
+        }
+
+         #teacherbutton, #studentsbutton
+        {
+            height: 20pt;
+            width: 70pt;
+            background-color: lightblue;
+            color: black;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            border-color: transparent;
+            border-width: 0mm;
+            border-radius: 5mm;
+        }
+
+        #managementbutton:hover, #teacherbutton:hover, #studentsbutton:hover
+        {
+            background-color: blue;
+            font-weight: bolder;
+            color: white;
+            cursor: pointer;
+        }
+
+        .textlabel
+        {
+            font-size: 20pt;
+            font-family: Bookman Old Style;
+            font-weight: bolder;
+            margin-left: 5mm;
+            color: white;
+        }
+
+        .note
+        {
+            position: absolute;
+            width: 100%;
+        }
+
+        .notespan
+        {
+            color: white;
+            font-size: 12pt;
+            font-family: constantia;
+            margin-left: 5mm;
+        }
+
+        .featurediv
+        {
+            position: absolute;
+            width: 100%;
+        }
+
+        .featurelabel, .managementlabel, .teacherlabel, .studentlabel
+        {
+            font-size: 13pt; 
+            color: cyan;
+            margin-left: 5mm;
+            text-align: left;
+            position: absolute; 
+            width: 100%;
+            cursor: pointer;
+            text-underline-position: auto;
+        }
+
+        .featurespan
+        {
+            position: absolute;
+            width: 40%;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        .managementspan
+        {
+            position: absolute;
+            width: 20%;
+            left: 40%;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        .teacherspan
+        {
+            position: absolute;
+            width: 20%;
+            left: 60%;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        .studentspan
+        {
+            position: absolute;
+            width: 20%;
+            right: 0;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        body a
+        {
+            color: yellow;
+            text-decoration-line: none;
+        }
+
+        body a:hover
+        {
+            color: cyan;
+            text-decoration-line: underline;
+        }
+
+        .cautionnote
+        {
+            position: absolute;
+            bottom: 0;
+            color: cyan;
+            font-size: 12pt;
+            margin-left: 5mm;
+            font-family: constantia;
+            font-style: italic;
+        }
+        

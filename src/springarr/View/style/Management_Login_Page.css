@@ -1,0 +1,144 @@
+body
+{
+    background-image: url('../../images/backgrounds/w19.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#container
+{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  border-radius: 0mm;
+  border-width: 2pt;
+  border-color: blue;
+  background-color: white;
+}
+#loginUsername
+{
+    background-image: url('../../images/icons/profile.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-x: 10pt;
+    border-radius: 5mm;
+    border-width: 0mm;
+    text-indent: 40px;
+    height: 30px;
+    background-position: 8pt ;
+    font-family: times new roman;
+    font-size: 12pt;
+    border-color: white;
+    border-top-color: white;
+    background-color: lightgray;
+    width: 300pt;
+    outline: none;
+}
+#loginUsername:focus, #passwordField:focus
+{
+    background-image: none;
+    border-color: blue;
+    border-bottom-color: blue;
+    font-family: Times New roman;
+    font-size: 12pt;
+    outline: none;
+}
+
+#passwordField
+{
+    background-image: url('../../images/icons/password3.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-x: 10pt;
+    border-radius: 5mm;
+    border-width: 0mm;
+    text-indent: 40px;
+    height: 30px;
+    background-position: 8pt ;
+    font-family: times new roman;
+    font-size: 12pt;
+    background-color: lightgray;
+    width: 300pt;
+    outline: none;
+}
+#loginButton
+{
+   background-color:blue;
+   color: white;
+   border-radius: 5mm;
+   border-color: blue;
+   width: 300pt;
+   height: 20pt;
+   border-width: 0mm;
+   font-size: 10pt;
+   align-self: stretch;
+   outline: none;
+}
+#admin, #teacher, #student
+{
+    background-color: midnightblue;
+    color: white;
+    height: 40pt;
+    font-size: 16pt;
+    border-radius: 10pt;
+}
+#instruction
+{
+    font-size: 11pt;
+    font-style: italic;
+    color: black;
+    padding-top: 0mm;
+    padding-bottom: 0mm;
+}
+
+#studentNumberField
+{
+    background-image: url('profile.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-x: 10pt;
+    border-radius: 10pt;
+    border-width: 0mm;
+    text-indent: 40px;
+    height: 30px;
+    background-position: 8pt ;
+    font-family: times new roman;
+    border-color: white;
+    border-top-color: white;
+    background-color: lightgray;
+    width: 300pt;
+    outline: none;
+
+}
+
+#studentNumberField:focus
+{
+    background-image: none;
+    border-bottom-color: midnightblue;
+    outline: none;
+}
+
+#surname
+{
+    background-image: url('password3.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-x: 10pt;
+    border-radius: 10pt;
+    border-width: 0mm;
+    text-indent: 40px;
+    height: 30px;
+    background-position: 8pt ;
+    font-family: times new roman;
+    background-color: lightgray;
+    width: 300pt;
+    outline: none;
+}
+
+#surname:focus
+{
+    background-image: none;
+    border-color: blue;
+    border-bottom-color: blue;
+    outline: none;
+}

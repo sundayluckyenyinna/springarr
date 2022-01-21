@@ -1,0 +1,76 @@
+/* styling the menu bar */
+.menu-bar  .label
+{
+    -fx-text-fill: wheat;
+}
+
+/* styling the accordion */
+.accordion > .titled-pane > .title 
+{
+    -fx-background-color: rgb(10,20,45);
+    -fx-text-fill: green;
+}
+.titled-pane
+{
+    -fx-text-fill: darkkhaki;
+}
+/* styling the accordion text header */
+.accordion > .titled-pane > .title > .text
+{
+    -fx-underline: true;
+}
+/* styling the arrow */
+.titled-pane > .title > .arrow-button > .arrow
+{
+    -fx-background-color: lightseagreen;
+    -fx-text-fill: green;
+}
+/* styling the menu items */
+.menu-item .label
+{
+    -fx-text-fill: black;
+}
+.menu-item
+{
+    -fx-background-color: white;
+}
+
+.button
+{
+    -fx-background-color: lightblue;
+    -fx-background-radius: 30;
+}
+
+.button:hover
+{
+    -fx-text-fill: white;
+    -fx-background-color: blue;
+    -fx-cursor: hand;
+}
+
+.text-field
+{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: grey;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label
+{
+    -fx-font-weight: bold;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected
+{
+    -fx-background-color: lightyellow;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label
+{
+    -fx-text-fill: black;
+    -fx-font-family: constantia;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab
+{
+    -fx-cursor: hand;
+}

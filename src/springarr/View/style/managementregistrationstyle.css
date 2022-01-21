@@ -1,0 +1,120 @@
+
+                /* css code for the select boxes */
+                .selectBox
+                {
+                  font-size: 10pt;
+                  font-family: times new roman;
+                  font-weight: normal;
+                  height: 20pt;
+                  text-indent: 2mm;
+                  width: 50mm;
+                  background-color: transparent;
+                  outline: none;
+                }
+
+                /* css coe for the text boxes */
+                .box
+                {
+                    font-size: 10pt;
+                    font-family: times new roman;
+                    font-weight: normal;
+                    height: 6mm;
+                    text-indent: 2mm;
+                    border-color: black;
+                    border-width: 0.01mm;
+                    outline: none;
+                }
+
+                /* css code for the headers */
+                .header
+                {
+                    font-size: 13pt;
+                    color: rgb(10,20,45);
+                    font-weight: bold;
+                    font-family: constantia;
+                }
+
+                /* css code for the legend class */
+                .legend
+                {
+                    font-size: 14pt;
+                    color: deepskyblue;
+                    align-self: center;
+                }
+
+                /* css code for the buttons */
+                #yesButton, #mysqlYes, #msaccessYes
+                {
+                    color: blue;
+                    border-color: blue;
+                    background-color: transparent;
+                    border-width: 0;
+                    font-size: 12pt;
+                    font-family: Times New Roman;
+                    cursor: pointer;
+                }
+
+                #submitbutton
+                {
+                    background-color: green;
+                    color: white;
+                    border-width: 0;
+                    border-radius: 3mm;
+                    cursor: pointer;
+                }
+
+                #submitbutton:hover
+                {
+                    background-color: darkgreen;
+                    cursor: pointer;
+                }
+
+                #noButton, #mysqlNo, #msaccessNo
+                {
+                    border-width: 0;
+                    color: red;
+                    background-color: transparent;
+                    font-size: 12pt;
+                    font-family: Times New Roman;
+                    cursor: pointer;
+                   
+                }
+                /* css code for the body */
+                body
+                {
+                    background-color: white;
+                    background-attachment: fixed;
+                }
+
+                #para1,#notice
+                {
+                   color: rgb(10,20,45);
+                   font-size: 13pt;
+
+                }
+
+                #mysqlinstruction
+                {
+                    color: green;
+                    font-size: 12pt;
+                    font-family: constantia;
+                }
+
+                #mysqlusername, #mysqlpassword, #msaccessversion
+                {
+                    margin-left: 15mm;
+                    height: 5mm;
+                    text-indent: 2mm;
+                    font-family: Times New Roman;
+                    font-size: 12pt;
+                    border-color:black;
+                    
+                }
+
+                #header
+                {
+                    color: darkgoldenrod; 
+                    font-size: 20pt;
+                     font-weight: bold; 
+                     font-family: bookman old style;
+                }

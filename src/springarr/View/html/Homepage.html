@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Home </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The style section -->
+    <link rel="stylesheet" type="text/css" href="../style/Homepagestyle.css">
+    <!-- The script section -->
+   <!--  <script type="text/javascript" src="../script/homescript.js" ></script>
+    --> 
+    <style type="text/css">
+    	        
+        body
+        {
+            background-color: transparent;
+        }
+        .header
+		{
+			background-color: rgb(10,20,45);
+                        background-attachment: fixed;
+			position: absolute;
+			height: 10%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			right: 0;
+		}   
+
+		.content
+		{
+			background-image: url('../../images/backgrounds/w30.jpg');
+			background-size: 100% 100%;
+			background-attachment: fixed; 
+			position: absolute;
+			height: 85%;
+			width: 100%;
+			left: 0;
+			top: 10%;
+			right: 0;
+		} 	
+
+		.footer
+		{
+			background-color: black;
+			position: fixed;
+			height: 5%;
+			width: 100%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		.companyblock
+    	{
+    		background-color: transparent;
+    		position: absolute;
+    		height: 100%;
+    		width: 30%;
+    		min-width: 30%;
+    		max-width: 30%;
+    		left: 3mm;
+    	}
+
+    	#companyname
+    	{
+    		position: absolute;
+    		height: 100%;
+    		width: 100%;
+    		min-width: 100%;
+    		font-size: 28pt;
+    		font-family: Bookman Old Style;
+    		font-weight: bold;
+    		font-stretch: 2pt;
+    		color: wheat;
+    		padding-top: 2.5mm;
+    	}
+
+    	.navigationbar
+    	{
+    		height: 100%;
+    		min-height: 100%;
+    		max-height: 100%;
+    		width: 30.5%;
+    		max-width: 30.5%;
+    		min-width: 30%;
+    		left: 30%;
+    		background-color: transparent;
+    		position: absolute;
+    	}
+
+    	#aboutbutton, #contactbutton, #registerbutton, #signinbutton
+    	{
+    		/* The layout parameters */
+    		height: 100%;
+    		min-height: 100%;
+    		max-height: 100%;
+    		width: 76pt;
+    		
+    		/* The backgroud color parameter */
+    		background-color: transparent;
+    		
+    		/* The border parameters */
+    		border-color: transparent;
+    		border-radius: 0pt;
+    		border-width: 0pt;
+
+    		/* The font properties */
+    		font-size: 12pt;
+    		font-family: constantia;
+    		font-stretch: ultra-expanded;
+    		text-align: center;
+    		font-weight: bold;
+    		color: white;
+
+    		/* The cursor styling */
+    		cursor: pointer;
+
+    	}
+
+    	#aboutbutton:hover, #contactbutton:hover, #registerbutton:hover, #signinbutton:hover
+    	{
+    		background-color: blue;
+    		cursor: pointer;
+
+    	}
+
+    	#abouticon, #contacticon, #registericon
+    	{
+
+    	}
+
+    	.sign
+    	{
+    		height: 100%; 
+    		border-width: 0pt; 
+    		border-color: transparent; 
+    		background-color: transparent; 
+    		border-collapse: collapse; 
+    	}
+
+    	.menu
+    	{
+    		height: 100%;
+    		background-color: transparent;
+    		display: inline-block;
+    		position: relative;
+    	}
+
+    	.menuitems
+    	{
+    		position: absolute;
+    		background-color: lightblue;
+    		min-width: 250px;
+    		display: none;
+    		z-index: 1;
+    	}
+    	
+    	.menuitems a
+    	{
+    		color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+    		font-size: 10pt;
+    		font-weight: bold;
+    	}
+
+    	.menuitems a:hover
+    	{
+    		background-color: blue;
+    		color: white;
+    	}
+
+    	.menu:hover .menuitems
+    	{
+    		display: block;
+    	}
+
+    	.menu:hover .signinbutton
+    	{
+    		background-color: rgb(10,20,45);
+    	}
+
+    	
+    	.searchgroup
+    	{
+    		position: absolute;
+    		height: 100%;
+    		width: 39.5%;
+    		background-color: transparent;
+    		right: 0;
+    	}
+
+    	.searchwrap
+    	{
+    		position: absolute;
+    		right: 3mm;
+    		margin-top: 5mm;
+    	}
+
+    	#searchfield
+    	{
+    		height: 18pt;
+    		width: 300pt;
+    		border-top-left-radius: 2mm;
+    		border-bottom-left-radius: 2mm;
+    		border-width: 0mm;
+    		border-color: transparent;
+    		border-collapse: collapse;
+    		font-size: 10pt;
+    		font-family: constantia;
+    		text-indent: 5mm;
+    	}
+
+    	#searchbutton
+    	{
+    		height: 19.5pt;
+    		background-color: lightblue;
+    		color: green;
+    		font-family: Times New Roman;
+    		font-size: 10pt;
+    		border-width: 0pt;
+    		border-color: transparent;;
+    		border-collapse: collapse;
+    		border-top-right-radius: 2mm;
+    		border-bottom-right-radius: 2mm;
+    		cursor: pointer;
+    		
+    	}
+
+    	#searchbutton:hover
+    	{
+    		background-color: blue;
+    		color: white;
+    	}
+
+        .copywritemessage
+        {
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: white;
+            padding-left: 3mm;
+            padding-top: 1mm;
+            position: absolute;
+        }
+
+        .generaltable
+        {
+            border-collapse: collapse;
+
+        }
+
+        #managementbutton
+        {
+            height: 20pt;
+            width: 100pt;
+            background-color: lightblue;
+            color: black;
+            font-size: 12pt;
+            font-family: Times New Roman;   
+            border-color: transparent;
+            border-width: 0mm;
+            border-radius: 5mm;
+
+        }
+
+         #teacherbutton, #studentsbutton
+        {
+            height: 20pt;
+            width: 70pt;
+            background-color: lightblue;
+            color: black;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            border-color: transparent;
+            border-width: 0mm;
+            border-radius: 5mm;
+        }
+
+        #managementbutton:hover, #teacherbutton:hover, #studentsbutton:hover
+        {
+            background-color: blue;
+            font-weight: bolder;
+            color: white;
+            cursor: pointer;
+        }
+
+        .textlabel
+        {
+            font-size: 20pt;
+            font-family: Bookman Old Style;
+            font-weight: bolder;
+            margin-left: 5mm;
+            color: white;
+        }
+
+        .note
+        {
+            position: absolute;
+            width: 100%;
+        }
+
+        .notespan
+        {
+            color: white;
+            font-size: 12pt;
+            font-family: constantia;
+            margin-left: 5mm;
+        }
+
+        .featurediv
+        {
+            position: absolute;
+            width: 100%;
+        }
+
+        .featurelabel, .managementlabel, .teacherlabel, .studentlabel
+        {
+            font-size: 13pt; 
+            color: cyan;
+            margin-left: 5mm;
+            text-align: left;
+            position: absolute; 
+            width: 100%;
+            cursor: pointer;
+            text-underline-position: auto;
+        }
+
+        .featurespan
+        {
+            position: absolute;
+            width: 40%;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        .managementspan
+        {
+            position: absolute;
+            width: 20%;
+            left: 40%;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        .teacherspan
+        {
+            position: absolute;
+            width: 20%;
+            left: 60%;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        .studentspan
+        {
+            position: absolute;
+            width: 20%;
+            right: 0;
+            font-size: 12pt;
+            font-family: Times New Roman;
+            color: lightcyan;
+        }
+
+        body a
+        {
+            color: yellow;
+            text-decoration-line: none;
+        }
+
+        body a:hover
+        {
+            color: cyan;
+            text-decoration-line: underline;
+        }
+
+        .cautionnote
+        {
+            position: absolute;
+            bottom: 0;
+            color: cyan;
+            font-size: 12pt;
+            margin-left: 5mm;
+            font-family: constantia;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+	<!-- The header -->
+	<div class="header">
+
+		<span class="companyblock">
+			<img src="springarr/images/icons/companylogo" alt="companylogo" id="companylogo" width="30" height="50" />
+			<span id="companyname"> SPRINGARR </span>
+		</span>
+
+		<!-- The navigation bar -->
+		<span class="navigationbar">
+			<!-- The About us span -->
+			<span class="aboutgroup">
+				<button id="aboutbutton"> About Us </button>
+			</span>
+
+			<!-- The Contact group -->
+			<span class="contactgroup">
+				<button id="contactbutton"> Contact Us </button>
+			</span>
+
+			<!-- The register button -->
+			<span class="registergroup">
+				<button id="registerbutton"> Register </button>
+			</span>
+
+			<!-- The sign in menu -->
+			<span class="signin">
+				<div class="menu">
+					<button id="signinbutton"> Sign in </button>
+					<div class="menuitems">
+						<a href="managementloginpage.html"> As Administrator/Management </a>
+						<a href="staffloginpage.html"> As Staff </a>
+						<a href="studentloginpage.html"> As Student </a>
+					</div>
+				</div>
+
+			</span>
+
+		</span>
+
+		<!-- The search group -->
+		<span class="searchgroup">
+			<span class="searchwrap">
+				<input type="text" name="searchfield" id="searchfield" placeholder="Enter keyword here" />
+                                <button id="searchbutton"  > Search </button>
+			</span>
+		</span>
+
+
+	</div>
+
+	<!-- The content of the body -->
+	<div class="content">
+		<br />
+		<!-- The sliding welcome -->
+		<div >
+			<span style="color:yellow; font-family: constantia; font-size: 14pt" id="text"> 
+				<marquee id="welcomemessage">
+                	Welcome! Take your School records management system digital with Springarr. Take it to the next level!  
+            	</marquee>
+        	</span>
+    	</div>
+
+    	<br /><br /> 
+
+    	<!-- The table for the buttons -->
+    	<div>
+    		<table class="generaltable" border="0" align="center" cellpadding="20">
+    			<tr>
+    				<!-- The management button and image -->
+    				<td class="managementcolumn">
+    					<!-- The management image -->
+    					<div id="managementimage">
+                                            <img src="../../images/icons/management.png" alt="management" width="100" height="100" />
+    					</div>	
+    					<!-- The management button -->
+    					<div>
+    						<button id="managementbutton"> Management </button>
+    					</div>
+    				</td>
+
+    				<!-- The Teacher button and image -->
+    				<td class="teachercolumn">
+    					<!-- the teacher image -->
+    					<div id="teacherimage">
+                                            <img src="../../images/icons/teacher.png" alt="teacher" width="100" height="100" />
+    					</div>
+    					<!-- The teacher button -->
+    					<div>
+    						<button id="teacherbutton"> Teacher </button>
+    					</div>
+    				</td>
+
+    				<!-- The student button and image -->
+    				<td class="studentcolumn">
+    					<!-- The student image -->
+    					<div id="studentimage">
+    						<img src="../../images/icons/students.png" alt="student" width="100" height="100" />
+    					</div>
+    					<!-- The students button -->
+    					<div>
+    						<button id="studentsbutton"> Student </button>
+    					</div>
+    				</td>
+
+    			</tr>
+    		</table>
+    	</div>
+
+    	<!-- the container for the bold text -->
+    	<div class="text">
+    		<span class="textspan">
+    			<label class="textlabel"> Digital School Records Management System (DSRMS) </label>
+    		</span>
+    	</div>
+
+
+
+    	<!-- the container for the short note -->
+    	<div class="note">
+    		<span class="notespan">
+    			This product offers the following features for the best experience of any school management system.
+    		</span>
+    		<div class="featurediv">
+    			<br />
+    			<span class="featurespan">
+    				<label class="featurelabel"> Product Features </label>
+    				<br />
+    				<ul class="featurelist">
+    					<li> 
+    						<a href="managementloginpage.html"> Management Review and organization of Staff and Students records </a> 
+    					</li>
+    					<li> <a href="managementloginpage"> Staff Management </a></li>
+    					<li> <a href="staffloginpage.html">  Student Management </a> </li>
+                                        <li> <a href="staffloginpage.html">  Students test and examination scores upload </a></li>
+                                        <li> <a href="staffloginpage.html"> Computer Based Testing (CBT) for students in all registered subjects </a></li>
+                                        <li> <a href="managementloginpage.html"> Computer Based Testing for  new staff interview </a> </li>
+    					<li> <a href="staffloginpage.html"> Computer Based Testing for new student admission </a> </li>
+    					<li> <a href="staffloginpage.html"> Staff academic broadsheet generation </a> </li>
+    					<li> <a href="staffloginpage.html"> Students academic report sheet generation </a> </li>
+    				</ul>
+    			</span>
+
+    			<span class="managementspan">
+    				<label class="managementlabel"> Management </label>
+    				<br />
+    				<ul>
+    					<li> <a href="managementloginpage.html"> Staff Management </a> </li>
+    					<li> <a href="managementloginpage.html"> Student Management </a></li>
+    					<li> <a href="managementloginpage.html"> Computer Based Testing for  new staff interview </a></li>
+    					<li> <a href="managementloginpage.html"> Staff academic broadsheet generation </a> </li>
+    					<li> <a href="managementloginpage.html"> Students academic report sheet generation </a> </li>
+    				</ul>
+    			</span>
+
+    			<span class="teacherspan">
+    				<label class="teacherlabel"> Teacher </label>
+    				<br />
+    				<ul>
+    					<li> <a href="staffloginpage.html"> Student Management </a> </li>
+    					<li> <a href="staffloginpage.html"> Subject Management </a></li>
+    					<li> <a href="staffloginpage.html"> Computer Based Testing (CBT) for students in all registered subjects </a></li>
+    					<li> <a href="staffloginpage.html"> Computer Based Testing for new student admission </a> </li>
+    					<li> <a href="staffloginpage.html"> Academic broadsheet generation </a> </li>
+    					<li> <a href="staffloginpage.html"> Students academic report sheet generation </a> </li>
+    				</ul>
+    			</span>
+
+    			<span class="studentspan">
+    				<label class="teacherlabel"> Students </label>
+    				<br />
+    				<ul>
+    					<li> <a href="studentloginpage.html"> Take Computer Based Test </a> </li>
+    					<li> <a href="studentloginpage.html"> Take Computer Based Exam </a></li>
+    				</ul>
+    			</span>
+    		</div>
+
+    	</div>
+
+    	<div class="cautionnote">
+			<span>
+				Note that on initial installation of this product, the school must be registered before the management, teachers and students controls will be activated.
+			</span>
+		</div>
+
+	</div>
+
+
+	
+
+	<!-- The footer -->
+	<div class="footer">
+		<span class="copywritemessage"> 
+			&copy; 2021. All Rights Reserved.| Springarr
+		</span>		
+	</div>
+
+
+	<!-- Javascript for simple things -->
+        <script type="text/javascript" src="../script/homescript.js" ></script>
+
+</body>
+
+</html>

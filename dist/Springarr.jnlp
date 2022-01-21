@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Springarr.jnlp">
+  <information>
+    <title>Springarr</title>
+    <vendor>sunday enyinna lucky</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Springarr.jar" size="13195893" download="eager" />
+    <jar href="lib\tika-app-1.26.jar" size="77874743" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Springarr" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="springarr.Controller.Springarr"  name="Springarr" />
+  <update check="always"/>
+</jnlp>
